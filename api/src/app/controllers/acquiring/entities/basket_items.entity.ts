@@ -14,6 +14,7 @@ import { BasketEntity } from './basket.entity';
 import { OperationEntity } from '@webapi/app/modules/operation/entities/operation.entity';
 
 export interface IBasketItemsCreationAttrs {
+  //для чего тут комбинация разных регистров camel и snake
   id?: bigint;
   fk_basket_id?: bigint;
   fk_operation_id: bigint;

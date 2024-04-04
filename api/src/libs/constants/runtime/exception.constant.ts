@@ -5,6 +5,9 @@ import {
   dateString,
 } from '@webapi/libs/utils/helpers/date.helper';
 
+
+/*suggestion: константы лучшие сгрупиировать и поместить в отдельные
+классы используя readonly это уменьшит их длинну и улучшит читаемость*/
 export const UES_BILLING_YEAR = 2023;
 export const UES_BILLING_MONTH = 9;
 

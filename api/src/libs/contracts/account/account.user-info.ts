@@ -9,6 +9,7 @@ export namespace AccountUserInfo {
   }
 
   export class Response {
+    //nitpick: для чего camel комбинировать со snake
     lastName: string;
 
     firstName: string;

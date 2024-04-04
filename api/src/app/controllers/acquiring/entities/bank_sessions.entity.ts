@@ -30,8 +30,8 @@ export interface IBankSessionsCreationAttrs {
   action_code?: number;
   user_ip?: string;
 }
-
 export interface IBankSessionsUpdateAttrs {
+//nitpick:зачем использовать snake case
   fk_acquiring_id?: number;
   fk_user_id?: number;
   fk_basket_id?: bigint;
@@ -54,6 +54,7 @@ export class BankSessionsEntity extends Model<
 > {
   @ApiProperty({ example: '1234', description: 'Уникальный идентификатор' })
   @Column({
+    //здесь camel case
     type: DataType.BIGINT,
     unique: true,
     autoIncrement: true,

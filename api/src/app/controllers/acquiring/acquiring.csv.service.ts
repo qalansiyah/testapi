@@ -6,6 +6,7 @@ import { existsSync, statSync, createReadStream, createWriteStream } from 'fs';
 import * as iconv from 'iconv-lite';
 
 import {
+  //nitpick почему такие длинные названия 
   UES_CSV_IN_FOLDER_NAME,
   UES_CSV_OUT_FOLDER_NAME,
   UES_CSV_SEPARATOR,
@@ -112,6 +113,7 @@ export class AcquiringCsvService {
   private csvFileChecking(
     mainPayments: (IMainCsvItem | ITotalCsvItem)[]
   ): any[] | null {
+    //nitpick: захардкожено
     const total = {
       numberLines: 0,
       amount: 0,

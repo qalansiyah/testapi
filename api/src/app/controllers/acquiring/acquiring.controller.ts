@@ -89,6 +89,7 @@ export class AcquiringController {
   @ApiOperation({
     summary: 'Формировние CSV-файла с платежами ВБРР.',
   })
+  //nitpick: возвращает только статутс 200, а как же остальные
   @ApiResponse({ status: 200 })
   // @UseGuards(AccessTokenGuards)
   @UsePipes(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }))

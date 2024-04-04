@@ -117,6 +117,7 @@ export class AcquiringRepository {
     sessionId: bigint | null;
   }> {
     return await this.bankSessionsRepository
+    //suggestion:почему бы просто не придерживаться KISS
       .findOne({
         where: {
           [Op.and]: [

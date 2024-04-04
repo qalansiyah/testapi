@@ -36,6 +36,7 @@ export class ParseYearPipe implements PipeTransform<string, number> {
       throw new BadRequestException('Validation failed');
     }
 
+    //nitpick: захардкожено
     if (!/^2\d\d\d$/.test(value) || val < 2023)
       throw new BadRequestException('Year check failed');
 
